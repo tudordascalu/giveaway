@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+/**********
+TIPOGRAPHY
+*****/
+
+.main-title{
+    font-size: 2em;
+    text-align: center;
+}
+
+
+
+/*****
+BUTTONS
+*****/
+.btn{
+    width: 170px;
+    border-radius: 5px;
+}
+
+.btn-secondary{
+    color: black;
+    background-color: white;
+}
+
+.btn-secondary:hover{
+    background-color: #e0e0e0;
+}
+
+.back{
+    color: black;
+    float: left;
+}
