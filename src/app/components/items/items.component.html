@@ -1,0 +1,18 @@
+<div class="categories">
+  <span (click)="category = 1" [ngClass]="{'active': category == 1}">All</span>
+  <span (click)="category = 2" [ngClass]="{'active': category == 2}">Furniture</span>
+  <span (click)="category = 3" [ngClass]="{'active': category == 3}">Electronics</span>
+  <span (click)="category = 4" [ngClass]="{'active': category == 4}">Clothes</span>
+  <span (click)="category = 5" [ngClass]="{'active': category == 5}">Other</span>
+</div>
+
+<hr>
+<div class="content">
+  <div class="box" *ngFor="let item of items">
+      <app-item [imageURL]="item.imageURL" [title]="item.title" [body]="item.body"></app-item>      
+  </div>
+  <div class="empty-box"></div>
+  <div class="empty-box"></div>
+  <div class="empty-box"></div>
+</div>
+<hr style="margin-bottom: 50px">
