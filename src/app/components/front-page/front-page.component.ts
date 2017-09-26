@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import * as $ from 'jquery';
 
 @Component({
   selector: 'app-front-page',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class FrontPageComponent implements OnInit {
 
   constructor() { }
-  
+
   ngOnInit() {
     $('.carousel').carousel();
   }
