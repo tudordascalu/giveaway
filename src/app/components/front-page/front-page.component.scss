@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.content{
+.buttons-container{
     span{
         margin: 0 40px;
     }
@@ -25,7 +25,7 @@
     }
 }
 
-.content{
+.buttons-container{
     margin-top: -50px;
 }
 
@@ -36,7 +36,7 @@ MEDIA QUERRIES
 *****/
 
 @media (max-width: 480px){
-    .content{
+    .buttons-container{
         display: flex;
         flex-direction: column;
         align-items: center;
