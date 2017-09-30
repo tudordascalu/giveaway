@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ItemComponent } from './item/item.component'
+import { ItemComponent } from './item/item.component';
+// import * as $ from 'jquery';
 @Component({
   selector: 'app-items',
   templateUrl: './items.component.html',
@@ -18,29 +19,34 @@ export class ItemsComponent implements OnInit {
       'imageURL': './assets/images/carousel/carousel-2.jpg',
       'title': 'Drawer',
       'body': 'This item is a very nice bed I used since I was little',
-      'category': 2 
+      'category': 2
      },
      {
       'imageURL': './assets/images/carousel/carousel-3.jpg',
       'title': 'Clothes',
       'body': 'This item is a very nice bed I used since I was little',
-      'category': 4 
+      'category': 4
      },
      {
       'imageURL': './assets/images/carousel/carousel-4.jpg',
       'title': 'Lamp',
       'body': 'This item is a very nice bed I used since I was little',
-      'category': 3 
+      'category': 3
      },
      {
       'imageURL': './assets/images/carousel/carousel-5.jpg',
       'title': 'Speakers',
       'body': 'This item is a very nice bed I used since I was little',
-      'category': 3 
-     }]
+      'category': 3
+     }];
   constructor() { }
 
   ngOnInit() {
+    this.initializeMaterialize();
+  }
+
+  initializeMaterialize() {
+    $('.modal-item').modal('open');
   }
 
 }
