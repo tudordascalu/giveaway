@@ -1,4 +1,4 @@
-form{
+.signup-login-form{
     .row{
         display: flex;
         .input-field{
@@ -7,12 +7,6 @@ form{
     }
 
     .buttons{
-        display: flex;
-        flex-direction: column;
-        a{
-            margin-left: auto;
-            margin-right: auto;
-        }
         a:nth-child(2){
             margin-top: 15px;
         }

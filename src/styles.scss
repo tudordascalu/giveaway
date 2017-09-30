@@ -42,3 +42,22 @@ BUTTONS
     color: black;
     float: left;
 }
+
+
+
+.signup-login-form{
+    padding: 20px 0;
+
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        a{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+
+
