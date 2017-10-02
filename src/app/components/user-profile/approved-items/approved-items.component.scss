@@ -1,0 +1,12 @@
+.items-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 60vh;
+    .box{
+        padding: 20px;
+    }
+    .empty-box{
+        width: 240px;
+    }
+}

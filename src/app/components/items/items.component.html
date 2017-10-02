@@ -7,16 +7,16 @@
 </div>
 
 <hr>
-<div class="items-container">
-  <ng-container *ngFor="let item of items">
-    <div class="box" *ngIf="item.category == category || category == 1">
-        <app-item [imageURL]="item.imageURL" [title]="item.title" [body]="item.body"></app-item>      
-    </div>
-  </ng-container>
-  <div class="empty-box"></div>
-  <div class="empty-box"></div>
-  <div class="empty-box"></div>
-</div>
+  <div class="items-container">
+    <ng-container *ngFor="let item of items">
+      <div class="box" *ngIf="item.category == category || category == 1">
+          <app-item [imageURL]="item.imageURL" [title]="item.title" [body]="item.body"></app-item>      
+      </div>
+    </ng-container>
+    <div class="empty-box"></div>
+    <div class="empty-box"></div>
+    <div class="empty-box"></div>
+  </div>
 <hr style="margin-bottom: 50px">
 
 

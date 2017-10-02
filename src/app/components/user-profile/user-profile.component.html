@@ -1,0 +1,15 @@
+<div class="categories">
+  <span (click)="category = 1" [ngClass]="{'active': category == 1}">Queue orders</span>
+  <span (click)="category = 2" [ngClass]="{'active': category == 2}">Aproved orders</span>
+  <span (click)="category = 3" [ngClass]="{'active': category == 3}">Pending offers</span>
+  <span (click)="category = 4" [ngClass]="{'active': category == 4}">History</span>
+</div>
+
+<hr>
+<div class="content">
+  <app-queue-items *ngIf="category == 1"></app-queue-items>
+  <app-approved-items *ngIf="category == 2"></app-approved-items>
+</div>
+<hr style="margin-bottom: 50px">
+
+
