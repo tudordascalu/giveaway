@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'app-item',
   templateUrl: './item.component.html',
@@ -12,19 +11,14 @@ export class ItemComponent implements OnInit {
   @Input() status = 0;
   @Input() body: string = 'This item is a very nice bed I used since I was little';
   @Input() address: string = 'Don t know';
+
+  @Output() zoom: EventEmitter<boolean> = new EventEmitter<boolean>();
   constructor() { }
 
   ngOnInit() {
-    this.initMaterialize();
   }
 
-  initMaterialize(){
-
-    $('.modal').modal();
-    $('.carousel.carousel-slider').carousel({fullWidth: true});
-  }
-
-  showModal(){
-    $('#modal-item').modal('open');
+  zoomIn(){
+    this.zoom.emit(true);
   }
 }

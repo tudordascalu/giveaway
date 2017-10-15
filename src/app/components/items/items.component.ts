@@ -8,6 +8,8 @@ import { ItemComponent } from './item/item.component';
 })
 export class ItemsComponent implements OnInit {
   category: number = 1;
+  zoomedIn = false;
+  zoomedItem: any;
   items = [
     {
      'imageURL': './assets/images/carousel/carousel-1.jpg',
@@ -42,11 +44,11 @@ export class ItemsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.initializeMaterialize();
   }
 
-  initializeMaterialize() {
-    $('.modal-item').modal('open');
+  zoomIn(item: any) {
+    this.zoomedItem = item;
+    this.zoomedIn = true;
   }
 
 }

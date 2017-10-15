@@ -1,0 +1,58 @@
+.carousel{
+    max-width: 430px;
+    .carousel-item > img{
+        border-radius: 5px;
+        height: 430px;
+    }
+}
+
+.text-box{
+    width: 45%;
+    padding: 11px;
+    margin-left: 30px;
+    margin: 20px 0 0 30px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input{
+    color: black!important;
+}
+
+label{
+    color: black!important;
+}
+
+
+/*******
+MEDIA QUERRIES
+*****/
+
+@media (max-width: 1024px){
+    .content{
+        flex-direction: column;
+        .text-box{
+            width: 400px;
+            margin: 50px 0 -30px 0!important;
+        }
+    }
+    
+}
+
+@media (max-width: 480px){
+        .carousel{
+            width: 90%;
+            max-width: unset;
+        }
+        .text-box{
+            width: 90%!important;
+            margin-top: 50px;
+            margin-bottom: -30px;
+        }
+    
+}
